@@ -1,6 +1,6 @@
 const OpenCC = require('opencc-js');
 
-const simplifier = OpenCC.Converter({from: 'hk', to: 'cn'})
+const simplifier = OpenCC.Converter({})
 
 function simplify(text: string) {
   return simplifier(text)
